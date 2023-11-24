@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/loggedUser.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Calculadora</title>
+</head>
+<body style="background-color: rgb(188, 215, 244)">
+    <div class="user_name_welcome">
+        
+         <p>Bienvenido, <span id="user_name"></span></p>
+         <div>
+            <a href="../views/editUsers.html">
+            <button id="config_button"><img src="../tuerca.png"></button>
+            </a>
+         </div>
+         <br>
+         <div>
+            <a href="../views/login.html"><button id="logOut"><img src="../cerrar-sesion.png"></button></a>
+         </div>
+         
+    </div>
+    <br>
+   
+    <div class="calculadora">
+        <div class="pantalla" id="pantalla_id">0</div>
+        <button class="butn" id="c">C</button>
+        <button class="butn" id="borrar">←</button>
+        <button class="butn">/</button>
+        <button class="butn">*</button>
+        <button class="butn">7</button>
+        <button class="butn">8</button>
+        <button class="butn">9</button>
+        <button class="butn">-</button>
+        <button class="butn">4</button>
+        <button class="butn">5</button>
+        <button class="butn">6</button>
+        <button class="butn">+</button>
+        <button class="butn">1</button>
+        <button class="butn">2</button>
+        <button class="butn">3</button>
+        <button class="butn" id="igual">=</button>
+        <button class="butn" id="cero">0</button>
+        <button class="butn">.</button>
+     
+
+    </div>
+    <script src="../scripts/loggedUser.js"></script>
+
+   
+
+
+    <div class="container mt-5 position-relative">
+        <div class="row">
+        <div class="col">
+            <table class="table table-default table-hover" id="table_operations">
+            <thead class="btn-personalizado">
+             <tr>   
+                    <th>ID</th>
+                    <th>Primer digito</th>
+                    <th>Segundo digito</th>
+                    <th>Operador</th>
+                    <th>Resultado</th>
+                    <th>Fecha</th>
+                    <th>Opciones</th>
+             </tr>
+            </thead>
+            <tbody id="t_body"></tbody>
+            </table>
+        </div>
+        </div>
+        </div>
+        <div>
+            <script src="../scripts/loggedUser.js"></script>
+        </div>
+
+</body>
+</html>
